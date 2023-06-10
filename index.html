@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal eCommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+
+        <!-- Logo -->
+        <div class="logo">Tribo</div>
+
+        <!-- Navigation -->
+        <div class="group">
+            <ul class="nav">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+
+        <!-- Search-Box -->
+        <div class="search">
+            <input type="text" id="search_input" placeholder="Pesquise aqui...">
+            <button type="submit" id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Icone-Menu -->
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Menu Responsivo -->
+        <div class="dropdown-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+            <div class="search-menu">
+                <input type="text" id="search_input_mobile" placeholder="Pesquise aqui...">
+                <button type="submit" id="search_btn_mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filtro de Categorias -->
+    <div id="filtro">
+        <button onclick="filtrarProduto('all')">All</button>
+        <button onclick="filtrarProduto('electronics')">Electronics</button>
+        <button onclick="filtrarProduto('jewelery')">Jewelery</button>
+        <button onclick="filtrarProduto('menswear')">Menswear</button>
+        <button onclick="filtrarProduto('womenswear')">Womenswear</button>
+    </div>
+
+    <!-- Cards de produtos -->
+    <div class="cards" id="cards"></div> 
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_content">
+            <div class="footer_contacts">
+                <h1>Tribo</h1>
+
+                <div class="footer_social">
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer_list">
+                <li>
+                    <h3>About</h3>
+                </li>
+                <li>
+                    <p>Thiago Rezende Aguiar</p>
+                </li>
+                <li>
+                    <p>Ciência da Computação</p>
+                </li>
+                <li>
+                    <p>Matrícula - 812573</p>
+                </li>
+            </ul>
+
+            <ul class="footer_list">
+                <li>
+                    <h3>Quick Links</h3>
+                </li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="footer_subscribe">
+                <h3>Newsletter</h3>
+
+                <p>Enter your e-mail to get notified about our news !!!</p>
+                <div class="input_group">
+                    <input type="email" id="email" required>
+                    <button type="submit"><i class="fa-regular fa-envelope"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_copyright">
+            © 2023 Tribo.com
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
